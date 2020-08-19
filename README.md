@@ -20,23 +20,34 @@ To help process this data, we will create machine learning models capable of cla
 * Use `GridSearch` to tune model parameters.
 * Tune and compare at least two different classifiers.
 
-# Analysis
+## Analysis
 
-## Preprocessing
-* In the first step, I assigned the `koi_disposition` as y (target) value and the rest columns as X as X (features).
+### Preprocessing
+* In the first step, I assigned the `koi_disposition` as y (target) value and the rest columns as X (features).
 * Next, I scaled and encoded the X and y values, then split them into training and testing data.
 
-## Tuning the models
-
-### Logistic Regression
-* Training Score: , Testing Score: 
-* Using `GridSearchCV` to tune the model's parameters and changing the grid parameters C and gamma didn't get any score improvement.
-
-### K Nearest Neighbor
-
-### Random Forest
-
-
-### Support Vector Machine
+### Tuning the models
+* Using `GridSearchCV` to tune the model's parameters and changing the grid parameters
 
 ## Model Comparison
+
+### Models
+
+#### Logistic Regression
+* Training Data Score: `0.851`, Testing Data Score: `0.843`
+* Best Score after Hyperparameter Tuning: `0.878`
+
+#### K Nearest Neighbor
+* Training Data Score: `0.882`, Testing Data Score: `0.837`
+* Best Score after Hyperparameter Tuning: `0.840` (where `k=7`)
+
+#### Random Forest
+* Training Data Score: `1.0`, Testing Data Score: `0.890`
+* Best Score after Hyperparameter Tuning: `0.892`
+
+#### Support Vector Machine
+* Training Data Score: `0.845`, Testing Data Score: `0.833`
+* Best Score after Hyperparameter Tuning: `0.881`
+
+### Model Selection
+Comparing all four models, the random forest yielded the highest score after hypterparameters tuning. Therefore, the random forest model is better than the other three models.
