@@ -23,14 +23,14 @@ To help process this data, we will create machine learning models capable of cla
 # Analysis
 
 ## Preprocessing
-* In the first step, I assigned the koi_disposition as y (target) value and the rest columns as X as X (features).
+* In the first step, I assigned the `koi_disposition` as y (target) value and the rest columns as X as X (features).
 * Next, I scaled and encoded the X and y values, then split them into training and testing data.
 
 ## Tuning the models
 
 ### Logistic Regression
 * Training Score: , Testing Score: 
-* Using GridSearchCV to tune the model's parameters and changing the grid parameters C and gamma didn't get any score improvement.
+* Using `GridSearchCV` to tune the model's parameters and changing the grid parameters C and gamma didn't get any score improvement.
 
 ### K Nearest Neighbor
 
